@@ -11,7 +11,31 @@
 </head>
 <body>
   <div class="hero">
-    <div class="form-box"></div>
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button class="toggle-btn" onclick="logined()">Login</button>
+        <button class="toggle-btn" onclick="registered()">Register</button>
+      </div>
+      <div class="social-icons">
+        <img src="images/facebook.png" alt="fb">
+        <img src="images/google-plus.png" alt="gp">
+        <img src="images/twitter.png" alt="tw">
+      </div>
+      <form id="login" class="input-group">
+        <input type="text" class="input-field" placeholder="Enter name" required>
+        <input type="password" class="input-field" placeholder="Enter password" required>
+        <input type="checkbox" class="check-box"><span>Remember Password</span>
+        <button type="submit" class="submit-btn">Login</button>
+      </form>
+      <form id="register" class="input-group">
+        <input type="text" class="input-field" placeholder="Enter name" required>
+        <input type="email" class="input-field" placeholder="Enter email" required>
+        <input type="password" class="input-field" placeholder="Enter password" required>
+        <input type="checkbox" class="check-box"><span>I agree to the term & conditions</span>
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+    </div>
   </div>
 </body>
 </html>
